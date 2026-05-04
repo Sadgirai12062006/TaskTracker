@@ -1,0 +1,204 @@
+html{
+    height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height : 100vh;
+  
+}
+
+/* Main card */
+.container {
+  background: white;
+  padding: 20px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  
+}
+
+
+
+/* Input section */
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Task list */
+li {
+  list-style: none;
+  background: #f9f9f9;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete button */
+li button {
+  background: red;
+}
+
+li button:hover {
+  background: darkred;
+}
+
+.filters {
+  margin: 10px 0;
+}
+
+.filters button {
+  margin: 5px;
+  padding: 5px 10px;
+}
+/* DARK MODE */
+.dark {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark .container {
+  background: #2c2c2c;
+}
+
+.dark input {
+  background: #444;
+  color: white;
+}
+
+.dark li {
+  background: #3a3a3a;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  margin-left: 5px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+li {
+  list-style: none;
+  background: #f9f9f9;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* text + buttons separate karne ke liye */
+li span {
+  flex: 1;
+}
+
+/* buttons ek line me lane ke liye */
+li div {
+  display: flex;
+  gap: 5px;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+li span {
+  font-size: 16px;
+}
+
+li div {
+  display: flex;
+  gap: 10px;
+}
+ul {
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  list-style: none;
+}
+
+li span {
+  text-align: left;
+}
+
+li div {
+  display: flex;
+  gap: 10px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 12px;
+  margin: 8px 0;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+li span {
+  flex: 1;
+}
+
+li div {
+  display: flex;
+  gap: 10px;
+}
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

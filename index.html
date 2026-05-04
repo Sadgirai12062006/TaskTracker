@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+<body>
+
+<script>
+function logout() {
+    localStorage.removeItem("loggedIn");
+    window.location.href = "login.html";
+}
+</script>
+
+<button class="logout-btn"
+onclick="logout()">Logout</button>
+<div class="container">
+  <h1>Task Tracker</h1>
+  <button onclick="toggleDarkMode()">🌙</button>
+  <input type="text" id="searchInput" placeholder="Search task..." onkeyup="showTasks()">
+  <div class="filters">
+  <button onclick="filterTasks('all')">All</button>
+  <button onclick="filterTasks('completed')">Completed</button>
+  <button onclick="filterTasks('pending')">Pending</button>
+</div>
+
+  <div class="input-area">
+    <input type="text" id="taskInput" placeholder="Enter your task">
+    <button onclick="addTask()">Add</button>
+  </div>
+
+  <p id="taskCount"></p>
+  <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
